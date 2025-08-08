@@ -11,18 +11,49 @@ Understanding_Gradient_descent_from_scratch/
 ├── 2_gradient_descent_class.ipynb    # Complete GD implementation as reusable class
 └── README.md                         # Project documentation
 ```
+## 🧠 1. Intuition of Gradient Descent
 
-## 🎯 What You'll Learn
+In the **first notebook**, we break down GD in the simplest possible way:
+- Start with a **random dataset**.
+- Use the equation:
 
-**Notebook 1: Intuition Building**
-- Start with simple linear equation: `y = mx + b`
-- Manually adjust intercept `b` to see how it affects predictions
-- Understand why and how gradient descent works before diving into math
+$$y = mx + b$$
 
-**Notebook 2: Complete Implementation**
-- Build a reusable `GradientDescent` class
-- Automatically calculate gradients for both slope and intercept
-- Visualize convergence and parameter updates
+- Fix `m` (slope) by **hand/assumption**.
+- Focus only on updating `b` (intercept) **manually**.
+- Observe how changing `b` step-by-step reduces the error.
+- Understand the **direction** and **magnitude** of updates intuitively before diving into formulas.
+
+**Key Concepts Covered:**
+- What is gradient descent?
+- Why does changing `b` affect the predictions?
+- How step size (learning rate) changes convergence speed.
+- Visualizing the loss curve.
+
+---
+
+## ⚙️ 2. Gradient Descent Class
+
+In the **second notebook** (`2_gradient_descent_class.ipynb`):
+- We take the concepts from the first notebook.
+- Implement a **`GradientDescent` class** that:
+  - Initializes parameters (`m`, `b`, learning rate, iterations).
+  - Calculates gradients automatically.
+  - Updates both `m` and `b` simultaneously.
+  - Tracks and returns loss over iterations.
+- Enables **reusability** and **clean code** for different datasets.
+
+---
+
+## 🔍 Why This Project?
+
+Most tutorials jump straight into the math of GD without explaining *why* it works.  
+This project:
+- Builds **intuition first**, then moves to **formal implementation**.
+- Uses **visuals and step-by-step reasoning**.
+- Bridges the gap between **concept** and **code**.
+
+---
 
 ## 🚀 Quick Start
 
